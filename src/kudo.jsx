@@ -10,8 +10,8 @@ const propTypes = {
 export default function Kudo({ type, message }) {
   return (
     <div className={style.main}>
-      <h1>{type ? type.label : ''}</h1>
-      <p>{message}</p>
+      <h1 className={style.header}>{type ? type.label : ''}</h1>
+      <div className={style.message}>{message}</div>
     </div>
   )
 }

@@ -1,3 +1,32 @@
+$line-height: 2em;
+
 .main {
   background-image: url('/texture-bg.jpg');
+  width: 700px;
+  height: 400px;
+  display: grid;
+  grid-template:
+    'header'70px 'message'1fr;
+}
+
+.header {
+  grid-area: header;
+}
+
+.message {
+  position: relative;
+  grid-area: message;
+  font-size: 18px;
+  line-height: $line-height;
+}
+
+.message::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: repeating-linear-gradient(180deg, transparent 0%, transparent ($line-height * 0.9), #444 $line-height);
 }
