@@ -5,11 +5,12 @@ import { saveAs } from 'file-saver'
 import style from './kudo.module.scss'
 
 const propTypes = {
-  type: pt.string,
+  typeId: pt.string,
+  typeLabel: pt.string,
   message: pt.string
 }
 
-export default function Kudo({ type, message }) {
+export default function Kudo({ typeId, typeLabel, message }) {
   const kudoRef = React.useRef()
 
   function onSaveClick() {
@@ -25,7 +26,7 @@ export default function Kudo({ type, message }) {
     <div>
       <button onClick={onSaveClick}>Salvar</button>
       <div className={style.main} ref={kudoRef}>
-        <h1 className={style.header}>{type ? type.label : ''}</h1>
+        <h1 className={style.header}>{typeLabel}</h1>
         <div className={style.message}>{message}</div>
       </div>
     </div>

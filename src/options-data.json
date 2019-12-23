@@ -1,0 +1,100 @@
+{
+  "lang": [{
+      "id": "br",
+      "labels": {
+        "br": "Português",
+        "en": "Portuguese",
+        "es": "Portugues"
+      }
+    },
+    {
+      "id": "en",
+      "labels": {
+        "br": "Inglês",
+        "en": "English",
+        "es": "Inglês"
+      }
+    },
+    {
+      "id": "es",
+      "labels": {
+        "br": "Espanhol",
+        "en": "Spanish",
+        "es": "Español"
+      }
+    }
+  ],
+  "kudo-types": [{
+      "id": "_",
+      "labels": {
+        "br": "",
+        "en": "",
+        "es": ""
+      }
+    },
+    {
+      "id": "i",
+      "labels": {
+        "br": "Inovação",
+        "en": "Innovation",
+        "es": "Innovación"
+      }
+    },
+    {
+      "id": "m",
+      "labels": {
+        "br": "Meritocracia",
+        "en": "Meritocracy",
+        "es": "Meritocracia"
+      }
+    },
+    {
+      "id": "a",
+      "labels": {
+        "br": "Todos Juntos",
+        "en": "All Together",
+        "es": "Todos Juntos"
+      }
+    },
+    {
+      "id": "l",
+      "labels": {
+        "br": "Lean",
+        "en": "Lean",
+        "es": "Lean"
+      }
+    },
+    {
+      "id": "o",
+      "labels": {
+        "br": "Excelência Operacional",
+        "en": "Operational Excellence",
+        "es": "Excelencia Operacional"
+      }
+    },
+    {
+      "id": "v",
+      "labels": {
+        "br": "Versatilidade",
+        "en": "Versatility",
+        "es": "Versatilidad"
+      }
+    },
+    {
+      "id": "e",
+      "labels": {
+        "br": "Empreendedorismo",
+        "en": "Entrepreneurship",
+        "es": "Emprendimiento"
+      }
+    },
+    {
+      "id": "r",
+      "labels": {
+        "br": "Resultados",
+        "en": "",
+        "es": ""
+      }
+    }
+  ]
+}

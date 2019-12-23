@@ -1,42 +1,27 @@
 import React from 'react'
+import OptionList from './option-list'
 import Kudo from './kudo'
-import typeOptionsLang from './options.json'
-
-const formatOptionLang = lang => ({ id, labels }) => ({
-  id,
-  label: labels[lang]
-})
 
 export default function KudoManager({ lang }) {
   const [message, setMessage] = React.useState('')
-  const formatTypeOption = React.useCallback(formatOptionLang(lang), [lang])
-  const typeOptions = React.useMemo(
-    () => typeOptionsLang.map(formatTypeOption),
-    [formatTypeOption]
-  )
-  const [typeOptionId, setTypeOptionId] = React.useState(typeOptions[0].id)
-  const typeOption = React.useMemo(
-    () => formatTypeOption(typeOptionsLang.find(o => o.id === typeOptionId)),
-    [formatTypeOption, typeOptionId]
-  )
+  const [type, setType] = React.useState(null)
 
-  function handleTypeChange(val) {
-    setTypeOptionId(val)
+  if (type) {
+    console.log(type.labels, lang, type.labels[lang])
   }
-
-  function handleMessageChange(val) {
-    setMessage(val)
-  }
-
   return (
     <div>
-      <select onChange={e => handleTypeChange(e.target.value)}>
-        {typeOptions.map(({ id, label }) => (
-          <option value={id}>{label}</option>
-        ))}
-      </select>
-      <textarea onChange={e => handleMessageChange(e.target.value)}></textarea>
-      <Kudo type={typeOption} message={message} />
+      <OptionList
+        lang={lang}
+        dataName='kudo-types'
+        onChange={value => setType(value)}
+      />
+      <textarea onChange={e => setMessage(e.target.value)}></textarea>
+      <Kudo
+        typeId={type && type.id}
+        typeLabel={type && type.labels[lang]}
+        message={message}
+      />
     </div>
   )
 }

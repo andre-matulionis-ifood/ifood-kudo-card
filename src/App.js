@@ -1,19 +1,18 @@
 import React from 'react'
+import OptionList from './option-list'
 import KudoManager from './kudo-manager'
 
 function App() {
-  const [lang, setLang] = React.useState('br')
-  function handleLangChange(e) {
-    setLang(e.target.value)
-  }
+  const [lang, setLang] = React.useState({ id: 'br' })
+
   return (
     <div className='App'>
-      <select onChange={handleLangChange}>
-        <option value='br'>Português</option>
-        <option value='en'>Inglês</option>
-        <option value='es'>Espanhol</option>
-      </select>
-      <KudoManager lang={lang} />
+      <OptionList
+        dataName='lang'
+        lang={lang.id}
+        onChange={lng => setLang(lng)}
+      />
+      <KudoManager lang={lang.id} />
     </div>
   )
 }
