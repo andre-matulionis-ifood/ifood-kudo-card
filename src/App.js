@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import OptionList from './option-list'
 import KudoManager from './kudo-manager'
 
@@ -7,6 +8,12 @@ function App() {
 
   return (
     <div className='App'>
+      <Helmet>
+        <link
+          href='https://fonts.googleapis.com/css?family=Kalam&display=swap'
+          rel='stylesheet'
+        />
+      </Helmet>
       <OptionList
         dataName='lang'
         lang={lang.id}

@@ -18,6 +18,7 @@ $line-height: 2em;
   grid-area: message;
   font-size: 18px;
   line-height: $line-height;
+  font-family: 'Kalam';
 }
 
 .message::before {
@@ -28,5 +29,6 @@ $line-height: 2em;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: repeating-linear-gradient(180deg, transparent 0%, transparent ($line-height * 0.9), #444 $line-height);
+  background: linear-gradient(to bottom, transparent 0%, transparent 1.8em, #333 2em);
+  background-size: 100% 2em;
 }
