@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ifood-kudo-card-site/static/css/main.b3c03438.chunk.css",
+    "main.js": "/ifood-kudo-card-site/static/js/main.d2d3c786.chunk.js",
+    "main.js.map": "/ifood-kudo-card-site/static/js/main.d2d3c786.chunk.js.map",
+    "runtime-main.js": "/ifood-kudo-card-site/static/js/runtime-main.015d4252.js",
+    "runtime-main.js.map": "/ifood-kudo-card-site/static/js/runtime-main.015d4252.js.map",
+    "static/js/2.e4c49afb.chunk.js": "/ifood-kudo-card-site/static/js/2.e4c49afb.chunk.js",
+    "static/js/2.e4c49afb.chunk.js.map": "/ifood-kudo-card-site/static/js/2.e4c49afb.chunk.js.map",
+    "index.html": "/ifood-kudo-card-site/index.html",
+    "precache-manifest.8049bc283298ad1355a880d320204e23.js": "/ifood-kudo-card-site/precache-manifest.8049bc283298ad1355a880d320204e23.js",
+    "service-worker.js": "/ifood-kudo-card-site/service-worker.js",
+    "static/css/main.b3c03438.chunk.css.map": "/ifood-kudo-card-site/static/css/main.b3c03438.chunk.css.map",
+    "static/js/2.e4c49afb.chunk.js.LICENSE": "/ifood-kudo-card-site/static/js/2.e4c49afb.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.015d4252.js",
+    "static/js/2.e4c49afb.chunk.js",
+    "static/css/main.b3c03438.chunk.css",
+    "static/js/main.d2d3c786.chunk.js"
+  ]
+}
