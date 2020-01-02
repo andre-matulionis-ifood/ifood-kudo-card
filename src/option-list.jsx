@@ -14,7 +14,6 @@ export default function OptionList({ lang, dataName, onChange }) {
   function handleIdChange(selectedId) {
     const selectedOption = optionsData[dataName].find(o => o.id === selectedId)
     onChange(selectedOption)
-    console.log({ selectedId, selectedOption })
   }
 
   return (

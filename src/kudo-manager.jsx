@@ -6,9 +6,6 @@ export default function KudoManager({ lang }) {
   const [message, setMessage] = React.useState('')
   const [type, setType] = React.useState(null)
 
-  if (type) {
-    console.log(type.labels, lang, type.labels[lang])
-  }
   return (
     <div>
       <OptionList
